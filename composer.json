@@ -1,14 +1,14 @@
 {
-    "name": "qiniu/php-sdk",
+    "name": "aoding9/qiniu-php-sdk",
     "type": "library",
-    "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
+    "description": "Qiniu Resource (Cloud) Storage SDK for PHP (fork with PHP 8.4+ nullable fixes)",
     "keywords": [
         "qiniu",
         "storage",
         "sdk",
         "cloud"
     ],
-    "homepage": "http://developer.qiniu.com/",
+    "homepage": "https://github.com/aoding9/qiniu-php-sdk",
     "license": "MIT",
     "authors": [
         {
@@ -18,10 +18,13 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=7.1",
         "ext-xml": "*",
         "ext-curl": "*",
         "myclabs/php-enum": "~1.5.2 || ~1.6.6 || ~1.7.7 || ~1.8.4"
+    },
+    "replace": {
+        "qiniu/php-sdk": "self.version"
     },
     "require-dev": {
         "paragonie/random_compat": ">=2",
