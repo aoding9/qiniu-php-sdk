@@ -1,29 +1,25 @@
-# Qiniu Cloud SDK for PHP
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/qiniu/php-sdk.svg)](https://travis-ci.org/qiniu/php-sdk)
-[![GitHub release](https://img.shields.io/github/v/tag/qiniu/php-sdk.svg?label=release)](https://github.com/qiniu/php-sdk/releases)
-[![Latest Stable Version](https://img.shields.io/packagist/v/qiniu/php-sdk.svg)](https://packagist.org/packages/qiniu/php-sdk)
-[![Total Downloads](https://img.shields.io/packagist/dt/qiniu/php-sdk.svg)](https://packagist.org/packages/qiniu/php-sdk)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/qiniu/php-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/qiniu/php-sdk/?branch=master)
-[![Coverage Status](https://codecov.io/gh/qiniu/php-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/qiniu/php-sdk)
-[![Join Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/qiniu/php-sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![@qiniu on weibo](http://img.shields.io/badge/weibo-%40qiniutek-blue.svg)](http://weibo.com/qiniutek)
+# Qiniu Cloud SDK for PHP（aoding9 fork）
 
+> 基于 [qiniu/php-sdk](https://github.com/qiniu/php-sdk) 的维护 fork：修复 PHP 8.4+ 隐式 nullable 等兼容问题，已在 **PHP 8.5** 验证。通过 `replace` 可替代官方 `qiniu/php-sdk`。
+
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+[![Latest Stable Version](https://img.shields.io/packagist/v/aoding9/qiniu-php-sdk.svg)](https://packagist.org/packages/aoding9/qiniu-php-sdk)
+[![Total Downloads](https://img.shields.io/packagist/dt/aoding9/qiniu-php-sdk.svg)](https://packagist.org/packages/aoding9/qiniu-php-sdk)
+<img src="https://img.shields.io/badge/PHP-%3E%3D7.1%20(incl.%208.5)-59a9f8.svg?style=flat" />
 
 ## 安装
 
-推荐使用 `composer` 进行安装。可以使用 composer.json 声明依赖，或者运行下面的命令。SDK 包已经放到这里 [`qiniu/php-sdk`][install-packagist] 。
-
 ```bash
-$ composer require qiniu/php-sdk
+$ composer require aoding9/qiniu-php-sdk
 ```
 
 ## 运行环境
 
-| Qiniu SDK版本 |                     PHP 版本                      |
+| Qiniu SDK版本 | PHP 版本 |
 |:--------------------:|:-----------------------------------------------:|
-|          7.x         | cURL extension,   5.3 - 5.6, 7.0 - 7.4, 8.0-8.1 |
-|          6.x         |           cURL extension,   5.2 - 5.6           |
+| 7.x（本 fork） | cURL extension，`composer.json` 约束 `>=7.1`，含 **7.1–8.5** |
+| 官方 7.x | cURL extension，约 5.3–5.6、7.0–7.4、8.0–8.1 |
+| 6.x | cURL extension，5.2–5.6 |
 
 ## 使用方法
 
@@ -73,4 +69,4 @@ $ ./vendor/bin/phpunit tests/Qiniu/Tests/
 The MIT License (MIT).详情见 [License文件](https://github.com/qiniu/php-sdk/blob/master/LICENSE).
 
 [packagist]: http://packagist.org
-[install-packagist]: https://packagist.org/packages/qiniu/php-sdk
+[install-packagist]: https://packagist.org/packages/aoding9/qiniu-php-sdk
